@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Socials } from './Socials';
 
 const Footer = () => {
   return (
@@ -39,30 +40,7 @@ const Footer = () => {
               <Link href={'#'} className='block py-4 text-14 font-normal'>Terms of Use</Link>
             </div>
             <div className='flex gap-x-4'>
-              <a href="#">
-                <Image 
-                  src={'/assets/socials/insta.svg'} 
-                  alt='instagram icon'
-                  height={24}
-                  width={24}
-                />
-              </a>
-              <a href="#">
-                <Image 
-                  src={'/assets/socials/facebook.svg'} 
-                  alt='instagram icon'
-                  height={24}
-                  width={24}
-                />
-              </a>
-              <a href="#">
-                <Image 
-                  src={'/assets/socials/twitter.svg'} 
-                  alt='instagram icon'
-                  height={24}
-                  width={24}
-                />
-              </a>
+              <Socials  />
             </div>
           </div>
         </div>

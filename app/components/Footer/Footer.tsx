@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className='w-full bg-main h-19 mt-36 py-8'>
-      <div className='mx-37 flex h-full'>
+    <footer className='w-full bg-main h-19 mt-36 py-8 text-white'>
+      <div className='mx-37 flex h-full justify-between gap-x-32'>
         <div className='w-[310px] flex flex-col justify-between h-full'>
           <Link href={'/'}>
             <Image
@@ -14,12 +14,57 @@ const Footer = () => {
               width={132}
             />
           </Link>
-          <p className='text-white text-[18px] flex items-center gap-x-2'>
+          <p className='text-base flex items-center gap-x-2'>
             <span className='text-3xl'>&copy;</span> Copyright 2022 - PunhubCentral.
           </p>
         </div>
-        <div className='w-310 bg-red-100'>
-
+        <div className='w-310 flex justify-between'>
+          <div>
+            <h4 className='text-22 font-medium'>Apps</h4>
+            <Link href={'#'} className='block py-4 text-14 font-normal'>PunhubCentral for Android</Link>
+            <Link href={'#'} className='block text-14 font-normal'>PunhubCentral for iOS</Link>
+          </div>
+          <div>
+            <h4 className='text-22 font-medium'>Quicklinks</h4>
+            <Link href={'#'} className='block py-4 text-14 font-normal'>Punchlines</Link>
+            <Link href={'#'} className='block text-14 font-normal'>Help</Link>
+            <Link href={'#'} className='block py-4 text-14 font-normal'>FAQs</Link>
+            <Link href={'#'} className='block text-14 font-normal'>Contact Us</Link>
+          </div>
+          <div className='flex flex-col h-full justify-between'>
+            <div>
+              <h4 className='text-22 font-medium'>Company</h4>
+              <Link href={'#'} className='block py-4 text-14 font-normal'>About</Link>
+              <Link href={'#'} className='block text-14 font-normal'>Privacy Policy</Link>
+              <Link href={'#'} className='block py-4 text-14 font-normal'>Terms of Use</Link>
+            </div>
+            <div className='flex gap-x-4'>
+              <a href="#">
+                <Image 
+                  src={'/assets/socials/insta.svg'} 
+                  alt='instagram icon'
+                  height={24}
+                  width={24}
+                />
+              </a>
+              <a href="#">
+                <Image 
+                  src={'/assets/socials/facebook.svg'} 
+                  alt='instagram icon'
+                  height={24}
+                  width={24}
+                />
+              </a>
+              <a href="#">
+                <Image 
+                  src={'/assets/socials/twitter.svg'} 
+                  alt='instagram icon'
+                  height={24}
+                  width={24}
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

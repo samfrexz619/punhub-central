@@ -30,6 +30,8 @@ const config: Config = {
       },
       fontSize: {
         base: '16px',
+        14: '14px',
+        22: '22px',
       }
     },
   },

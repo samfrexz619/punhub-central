@@ -27,29 +27,34 @@ const BodySection = () => {
 
   return (
     <div className="w-full relative py-3">
-      <div className="mx-37">
-        <h1 className={`${playfair_display.className} text-[43px] font-medium text-main leading-[48px]`}>
-          Let’s revive the Creativity of <br /> the hip-hop culture
-        </h1>
-        <ul className="mt-4">
-          {
-            pageItems.map(item => (
-              <PageItem key={item.id} color={item.color} text={item.text} />
-            ))
-          }
-        </ul>
-        <div className="flex mt-16 gap-x-4">
-          <Button variant="app" />
-          <Button variant="google" />
+      <div className="mx-37 flex justify-between">
+        <div>
+          <h1 className={`${playfair_display.className} text-[43px] font-medium text-main leading-[48px]`}>
+            Let’s revive the Creativity of <br /> the hip-hop culture
+          </h1>
+          <ul className="mt-4">
+            {
+              pageItems.map(item => (
+                <PageItem key={item.id} color={item.color} text={item.text} />
+              ))
+            }
+          </ul>
+          <div className="flex mt-16 gap-x-4">
+            <Button variant="app" />
+            <Button variant="google" />
+          </div>
+          <span className="absolute -left-7 -bottom-[12rem] -z-0">
+            <Image
+              src={'/assets/musical-note.svg'}
+              alt="musical note image"
+              width={500}
+              height={156}
+            />
+          </span>
         </div>
-      <span className="absolute -left-7 -bottom-[12rem] -z-0">
-        <Image 
-          src={'/assets/musical-note.svg'} 
-          alt="musical note image"
-          width={500}
-          height={156}
-        />
-      </span>
+        <div className="">
+          <Image src={'/assets/mobile.svg'} alt="kjghskdv" height={432} width={200} />
+        </div>
       </div>
     </div>
   );

@@ -58,7 +58,7 @@ const BodySection = () => {
             alt="punhub splashscreen display" 
             height={490} 
             width={200} 
-            className="rounded-30 border-solid border-pryBlack border-4 absolute block left-16"
+            className="rounded-30 border-solid border-pryBlack border-4 absolute block left-[197px] -top-1"
           />
           <Image 
             src={'/assets/PunhubCentral-main.gif'} 

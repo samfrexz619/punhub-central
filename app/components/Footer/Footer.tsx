@@ -15,7 +15,7 @@ const Footer = () => {
               width={132}
             />
           </Link>
-          <p className='text-base flex items-center gap-x-2'>
+          <p className='flex items-center gap-x-2 text-14'>
             <span className='text-3xl'>&copy;</span> Copyright 2022 - PunhubCentral.
           </p>
         </div>

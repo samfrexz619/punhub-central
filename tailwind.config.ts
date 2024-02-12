@@ -23,7 +23,8 @@ const config: Config = {
         37: '156px',
         13: '52px',
         19: '308px',
-        310: 'calc(100% - 310px)'
+        310: 'calc(100% - 310px)',
+        rem: 'calc(100% - 552px)'
       },
       boxShadow: {
         nav: '0px 4px 4px 0px rgba(234, 234, 234, 0.25)',
@@ -32,6 +33,9 @@ const config: Config = {
         base: '16px',
         14: '14px',
         22: '22px',
+      },
+      borderRadius: {
+        30: '21.305px'
       }
     },
   },

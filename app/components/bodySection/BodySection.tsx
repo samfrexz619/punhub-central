@@ -28,7 +28,7 @@ const BodySection = () => {
   return (
     <div className="w-full relative py-3">
       <div className="mx-37 flex justify-between">
-        <div>
+        <div className="w-[552px]">
           <h1 className={`${playfair_display.className} text-[43px] font-medium text-main leading-[48px]`}>
             Let’s revive the Creativity of <br /> the hip-hop culture
           </h1>
@@ -52,8 +52,21 @@ const BodySection = () => {
             />
           </span>
         </div>
-        <div className="">
-          <Image src={'/assets/mobile.svg'} alt="kjghskdv" height={432} width={200} />
+        <div className="relative w-rem flex justify-end">
+          <Image 
+            src={'/assets/functionality.gif'} 
+            alt="punhub splashscreen display" 
+            height={490} 
+            width={200} 
+            className="rounded-30 border-solid border-pryBlack border-4 absolute block left-16"
+          />
+          <Image 
+            src={'/assets/PunhubCentral-main.gif'} 
+            alt="punhub splashscreen display" 
+            height={490} 
+            width={200} 
+            className="rounded-30 border-solid border-pryBlack border-4 relative block"
+          />
         </div>
       </div>
     </div>

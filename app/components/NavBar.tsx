@@ -5,7 +5,7 @@ import Link from "next/link";
 const NavBar = () => {
   return (
     <header className='w-full h-25 bg-white shadow-nav top-0 fixed z-50'>
-      <nav className="mx-37 flex items-center h-full justify-between">
+      <nav className="lg:mx-37 mx-3 flex items-center h-full justify-between">
         <Link href={'/'}>
           <Image
             src="/assets/logo.svg"

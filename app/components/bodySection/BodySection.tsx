@@ -39,7 +39,7 @@ const BodySection = () => {
               ))
             }
           </ul>
-          <div className="flex mt-16 gap-x-4">
+          <div className="flex mt-16 gap-x-4 justify-center lg:justify-start">
             <Button variant="app" />
             <Button variant="google" />
           </div>

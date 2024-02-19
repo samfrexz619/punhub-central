@@ -13,12 +13,14 @@ const Button: React.FC<Props> = ({ variant }) => {
           alt="app store image"
           height={52}
           width={180}
+          className="w-[120px] lg:w-[180px]"
         />
         :<Image
           src={'/assets/google.svg'}
           alt="app store image"
           height={52}
           width={180}
+          className="w-[120px] lg:w-[180px]"
         />}
     </button>
   );

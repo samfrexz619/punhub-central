@@ -5,7 +5,7 @@ import { Socials } from './Socials';
 const Footer = () => {
   return (
     <footer className='w-full bg-main h-19 mt-36 py-8 text-white'>
-      <div className='mx-37 flex h-full justify-between gap-x-32'>
+      <div className='lg:mx-37 mx-3 flex h-full justify-between gap-x-32'>
         <div className='w-[310px] flex flex-col justify-between h-full'>
           <Link href={'/'}>
             <Image
@@ -20,12 +20,12 @@ const Footer = () => {
           </p>
         </div>
         <div className='w-310 flex justify-between'>
-          <div>
+          <div className='hidden lg:block'>
             <h4 className='text-22 font-medium'>Apps</h4>
             <Link href={'#'} className='block py-4 text-14 font-normal'>PunhubCentral for Android</Link>
             <Link href={'#'} className='block text-14 font-normal'>PunhubCentral for iOS</Link>
           </div>
-          <div>
+          <div className=''>
             <h4 className='text-22 font-medium'>Quicklinks</h4>
             <Link href={'#'} className='block py-4 text-14 font-normal'>Punchlines</Link>
             <Link href={'#'} className='block text-14 font-normal'>Help</Link>

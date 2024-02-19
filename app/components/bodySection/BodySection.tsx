@@ -28,9 +28,9 @@ const BodySection = () => {
   return (
     <div className="w-full relative py-3">
       <div className="lg:mx-37 mx-3 lg:flex justify-between">
-        <div className="w-[552px]">
-          <h1 className={`${playfair_display.className} text-[43px] font-medium text-main leading-[48px]`}>
-            Let’s revive the Creativity of <br /> the hip-hop culture
+        <div className="lg:w-[552px]">
+          <h1 className={`${playfair_display.className} text-2xl md:text-[43px] font-medium text-main leading-[48px]`}>
+            Let’s revive the Creativity of <br className="hidden md:block" /> the hip-hop culture
           </h1>
           <ul className="mt-4">
             {

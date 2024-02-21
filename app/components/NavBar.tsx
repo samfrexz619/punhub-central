@@ -15,7 +15,7 @@ const NavBar = () => {
             priority
          />
         </Link>
-        <ul className="text-pryBlack flex gap-x-13">
+        <ul className="text-pryBlack hidden lg:flex gap-x-13">
           <li>
             <Link href={'#'} className="text-base font-medium">Punchlines</Link>
           </li>

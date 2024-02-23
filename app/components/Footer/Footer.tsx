@@ -39,9 +39,23 @@ const Footer = () => {
               <Link href={'#'} className='block text-14 font-normal'>Privacy Policy</Link>
               <Link href={'#'} className='block py-4 text-14 font-normal'>Terms of Use</Link>
             </div>
-            <div className='flex gap-x-4'>
-              <Socials  />
-            </div>
+          </div>
+
+          <div className='h-full'>
+            <h4 className='text-22 font-medium'>Socials</h4>
+            <a href="#" className='flex gap-x-2 items-center py-2'>
+              <Socials social='ig' />
+              <span>PunhubCentral</span>
+            </a>
+            <a href="#" className='flex gap-x-2 items-center py-2'>
+              <Socials social='fb' />
+              <span>PunhubCentral</span>
+            </a>
+            <a href="#" className='flex gap-x-2 items-center py-2'>
+              <Socials social='x' />
+              <span>PunhubCentral</span>
+            </a>
+
           </div>
         </div>
       </div>

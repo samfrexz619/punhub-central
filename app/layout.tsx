@@ -19,7 +19,7 @@ export default function RootLayout({
       <body>
         <main className="bg-white">
           <NavBar  />
-          <main className="w-full relative top-25 mt-24">
+          <main className="w-full relative top-25 mt-24 overflow-x-hidden">
             {children}
           </main>
         </main>

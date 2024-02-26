@@ -5,9 +5,9 @@ import { Socials } from './Socials';
 const Footer = () => {
   return (
     <footer className='w-full bg-main mt-36 py-6 text-white'>
-      <div className='lg:px-37 w-full px-3 lg:flex lg:h-[290px] lg:justify-between flex-wrap lg:flex-nowrap'>
+      <div className='lg:px-37 block w-full px-3 lg:flex lg:h-[290px] lg:justify-between flex-wrap lg:flex-nowrap'>
 
-        <div className=''>
+        <div className='w-full lg:w-auto flex justify-center'>
           <Link href={'/'}>
             <Image
               src={'/assets/logo-white.svg'}

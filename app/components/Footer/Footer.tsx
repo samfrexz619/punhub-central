@@ -61,7 +61,7 @@ const Footer = () => {
       <div className='w-full'>
        <div className='w-4/5 mx-auto'>
           <i className='h-[1px] block w-full bg-gray-200'></i>
-          <p className='flex gap-x-2 text-14 justify-center py-3 items-center'>
+          <p className='flex gap-x-2 text-14 justify-center pt-4 items-center'>
             <span className='text-3xl'>&copy;</span> Copyright 2022 - PunhubCentral.
           </p>
        </div>

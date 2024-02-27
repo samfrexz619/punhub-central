@@ -23,6 +23,7 @@ const Footer = () => {
               <Link href={'#'} className='block py-4 text-14 font-normal'>PunhubCentral for Android</Link>
               <Link href={'#'} className='block text-14 font-normal'>PunhubCentral for iOS</Link>
             </div>
+            
             <div className=''>
               <h4 className='text-22 font-medium'>Quicklinks</h4>
               <Link href={'#'} className='block py-4 text-14 font-normal'>Punchlines</Link>

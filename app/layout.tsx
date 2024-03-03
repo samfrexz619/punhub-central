@@ -18,8 +18,8 @@ export default function RootLayout({
     <html lang="en" className={lato.className}>
       <body>
         <main className="bg-white">
-          <NavBar  />
-          <main className="w-full relative top-25 mt-24 overflow-x-hidden">
+          <NavBar />
+          <main className="w-full relative top-25 mt-20 overflow-x-hidden">
             {children}
           </main>
         </main>

@@ -26,7 +26,7 @@ const BodySection = () => {
   ]
 
   return (
-    <div className="w-full relative py-3">
+    <div className="w-full relative lg:py-3">
       <div className="lg:px-37 px-3 lg:flex justify-between gap-x-8">
         <div className="lg:w-[552px]">
           <h1 className={`${playfair_display.className} text-2xl md:text-[43px] font-medium text-main leading-[48px]`}>

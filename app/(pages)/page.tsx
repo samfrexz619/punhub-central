@@ -1,6 +1,5 @@
 import Footer from "../components/Footer/Footer";
 import BodySection from "../components/bodySection/BodySection";
-import Navigation from "../components/mobileNav/Navigation";
 
 export default function Home() {
   return (
@@ -9,7 +8,6 @@ export default function Home() {
         <BodySection />
       </section>
       <Footer />
-      {/* <Navigation /> */}
     </main>
   );
 }

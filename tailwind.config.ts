@@ -27,7 +27,8 @@ const config: Config = {
         19: '308px',
         310: 'calc(100% - 310px)',
         rem: 'calc(100% - 552px)',
-        footWidth: 'calc(100% - 180px)'
+        footWidth: 'calc(100% - 180px)',
+        linkWidth: 'calc(100% - 132px)',
       },
       boxShadow: {
         nav: '0px 4px 4px 0px rgba(234, 234, 234, 0.25)',

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { playfair_display } from "../../fonts";
 import Button from "./Button";
 import PageItem from "./PageItem";
-
+import './bodySection.scss'
 
 
 const BodySection = () => {
@@ -20,14 +20,14 @@ const BodySection = () => {
     },
     {
       id: 3,
-      text: <span>Step into the world of rhythm and lyrics, Contribute to the punchline <br  /> community, we need you to be a part of it.</span>,
+      text: <span>Step into the world of rhythm and lyrics, Contribute to the punchline <br /> community, we need you to be a part of it.</span>,
       color: '#82ABFB'
     },
   ]
 
   return (
     <div className="w-full relative py-3">
-      <div className="lg:px-37 px-3 lg:flex justify-between">
+      <div className="lg:px-37 px-3 lg:flex justify-between gap-x-8">
         <div className="lg:w-[552px]">
           <h1 className={`${playfair_display.className} text-2xl md:text-[43px] font-medium text-main leading-[48px]`}>
             Let’s revive the Creativity of <br className="hidden md:block" /> the hip-hop culture
@@ -53,20 +53,24 @@ const BodySection = () => {
           </span>
         </div>
         <div className="relative w-rem hidden lg:flex justify-end">
-          <Image 
-            src={'/assets/functionality.gif'} 
-            alt="punhub splashscreen display" 
-            height={490} 
-            width={200} 
-            className="rounded-30 border-solid border-pryBlack border-4 absolute block left-[197px] -top-1"
+          <Image
+            src={'/assets/video-mockup.png'}
+            alt="punhub splashscreen display"
+            height={490}
+            width={400}
+            className="block rounded-30"
           />
-          <Image 
-            src={'/assets/PunhubCentral-main.gif'} 
-            alt="punhub splashscreen display" 
-            height={490} 
-            width={200} 
-            className="rounded-30 border-solid border-pryBlack border-4 relative block"
-          />
+          {/* <div className="w-1/2 relative">
+            <div className="android-bg absolute -left-12 z-10 -top-4">
+              <Image
+                src={'/assets/PunhubCentral-main.gif'}
+                alt="punhub splashscreen display"
+                height={490}
+                width={200}
+                className="rounded-30 absolute block right-3 top-7"
+              />
+            </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -18,6 +18,7 @@ const config: Config = {
         pryBlack: '#424141',
         textPry: '#00070A',
         line: 'gba(196, 231, 255, 0.50)',
+        modal: 'rgba(0, 0, 0, 0.4)',
       },
       spacing: {
         25: '100px',

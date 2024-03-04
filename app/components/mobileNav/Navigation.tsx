@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 interface Props {
   closeMobile: () => void;
 }
@@ -13,7 +14,10 @@ const Navigation: React.FC<Props> = (props) => {
   return (
     <div onClick={closeMobile} className='bg-modal fixed left-0 inset-y-0 h-screen z-50 right-0'>
       <nav onClick={e => e.stopPropagation()} className='h-full relative bg-white w-[280px]'>
-        <ul className='px-5 pt-10'>
+        <ul className='px-4'>
+          <li className='py-5'>
+            <Image src={'/assets/mobile-logo.svg'} width={200} height={100} alt='logo' />
+          </li>
           <li className='py-3'>
             <Link href={'#'} className="text-base font-medium">Punchlines</Link>
           </li>

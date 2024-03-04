@@ -16,10 +16,7 @@ const NavBar = () => {
     <>
       <header className='w-full h-25 bg-white shadow-nav top-0 fixed z-50'>
         <nav className="lg:mx-37 mx-3 flex items-center h-full justify-between">
-          <button onClick={handleShowMobile} className="flex lg:hidden">
-            <img src="/assets/menu.svg" alt="" />
-          </button>
-          <Link href={'/'}>
+          <Link href={'/'} className="hidden lg:block">
             <Image
               src="/assets/logo.svg"
               alt="Vercel Logo"
@@ -28,6 +25,18 @@ const NavBar = () => {
               priority
             />
           </Link>
+          <Link href={'/'} className="block lg:hidden">
+            <Image
+              src="/assets/mobile-logo.svg"
+              alt="Vercel Logo"
+              width={200}
+              height={100}
+              priority
+            />
+          </Link>
+          <button onClick={handleShowMobile} className="flex lg:hidden">
+            <img src="/assets/menu.svg" alt="" />
+          </button>
           <ul className="text-pryBlack hidden lg:flex gap-x-13">
             <li>
               <Link href={'#'} className="text-base font-medium">Punchlines</Link>

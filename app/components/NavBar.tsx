@@ -19,19 +19,10 @@ const NavBar = () => {
           <div className="flex items-center gap-x-2">
             <Link href={'/'} className="block">
               <Image
-                src="/assets/logo.svg"
+                src="/assets/pc-logo.png"
                 alt="Vercel Logo"
-                width={64}
+                width={150}
                 height={64}
-                priority
-              />
-            </Link>
-            <Link href={'/'} className="block lg:hidden">
-              <Image
-                src="/assets/mobile-logo.svg"
-                alt="Vercel Logo"
-                width={170}
-                height={80}
                 priority
               />
             </Link>

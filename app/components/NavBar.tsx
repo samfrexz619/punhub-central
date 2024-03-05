@@ -16,24 +16,26 @@ const NavBar = () => {
     <>
       <header className='w-full h-25 bg-white shadow-nav top-0 fixed z-50'>
         <nav className="lg:mx-37 mx-3 flex items-center h-full justify-between">
-          <Link href={'/'} className="hidden lg:block">
-            <Image
-              src="/assets/logo.svg"
-              alt="Vercel Logo"
-              width={64}
-              height={64}
-              priority
-            />
-          </Link>
-          <Link href={'/'} className="block lg:hidden">
-            <Image
-              src="/assets/mobile-logo.svg"
-              alt="Vercel Logo"
-              width={200}
-              height={100}
-              priority
-            />
-          </Link>
+          <div className="flex items-center gap-x-2">
+            <Link href={'/'} className="block">
+              <Image
+                src="/assets/logo.svg"
+                alt="Vercel Logo"
+                width={64}
+                height={64}
+                priority
+              />
+            </Link>
+            <Link href={'/'} className="block lg:hidden">
+              <Image
+                src="/assets/mobile-logo.svg"
+                alt="Vercel Logo"
+                width={170}
+                height={80}
+                priority
+              />
+            </Link>
+          </div>
           <button onClick={handleShowMobile} className="flex lg:hidden">
             <img src="/assets/menu.svg" alt="" />
           </button>

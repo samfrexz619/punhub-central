@@ -29,26 +29,31 @@ const BodySection = () => {
     <div className="w-full relative lg:py-3">
       <div className="lg:px-37 px-3 lg:flex justify-between gap-x-8">
         <div className="lg:w-[552px]">
-          <h1 className={`${playfair_display.className} text-2xl md:text-[43px] font-medium text-main leading-[48px]`}>
+          <h1 className={`${playfair_display.className} text-2xl md:text-[40px] font-medium text-black leading-[48px]`}>
             Let’s revive the Creativity of <br className="hidden md:block" /> the hip-hop culture
           </h1>
-          <ul className="mt-4">
+          <div className="mt-5">
+            <p className="text-black text-[16px]">
+              Connect with the world of rhythm and lyrics, share your puns, show your <br className="hidden md:block" /> support for talented creators, and <br className="hidden md:block" /> contribute to the punchline community—connect with every <br className="hidden md:block" /> pun lover today!
+            </p>
+          </div>
+          {/* <ul className="mt-4">
             {
               pageItems.map(item => (
                 <PageItem key={item.id} color={item.color} text={item.text} />
               ))
             }
-          </ul>
-          <div className="block md:hidden pt-10">
+          </ul> */}
+          <div className="block lg:hidden pt-10">
             <button className="bg-main py-4 px-12 h-12 rounded-lg text-white text-[14px] font-bold">
               OPEN APP
             </button>
           </div>
-          <div className="hidden md:flex mt-16 gap-x-4 justify-center lg:justify-start">
+          <div className="hidden lg:flex mt-16 gap-x-4 justify-center lg:justify-start relative">
             <Button variant="app" />
             <Button variant="google" />
           </div>
-          <span className="absolute hidden md:block -left-7 -bottom-[12rem] -z-0">
+          <span className="absolute hidden lg:block -left-7 -bottom-[1rem] -z-0">
             <Image
               src={'/assets/musical-note.svg'}
               alt="musical note image"
@@ -63,19 +68,8 @@ const BodySection = () => {
             alt="punhub splashscreen display"
             height={490}
             width={400}
-            className="block rounded-30"
+            className="block rounded-30 w-full"
           />
-          {/* <div className="w-1/2 relative">
-            <div className="android-bg absolute -left-12 z-10 -top-4">
-              <Image
-                src={'/assets/PunhubCentral-main.gif'}
-                alt="punhub splashscreen display"
-                height={490}
-                width={200}
-                className="rounded-30 absolute block right-3 top-7"
-              />
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

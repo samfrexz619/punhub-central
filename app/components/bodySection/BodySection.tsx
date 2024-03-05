@@ -59,7 +59,7 @@ const BodySection = () => {
         </div>
         <div className="relative w-rem hidden lg:flex justify-end">
           <Image
-            src={'/assets/video-mockup.png'}
+            src={'/assets/vidoe.svg'}
             alt="punhub splashscreen display"
             height={490}
             width={400}

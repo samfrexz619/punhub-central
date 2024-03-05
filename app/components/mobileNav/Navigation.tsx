@@ -27,11 +27,11 @@ const Navigation: React.FC<Props> = (props) => {
           <li className='py-3 pb-10'>
             <Link href={'#'} className="text-base font-medium">Contact Us</Link>
           </li>
-          <li className='pt-4 border-t-2 border-[#E6EBED] border-solid'>
+          {/* <li className='pt-4 border-t-2 border-[#E6EBED] border-solid'>
             <button className="bg-main w-full h-12 rounded-lg text-white text-[14px] font-bold">
               OPEN APP
             </button>
-          </li>
+          </li> */}
         </ul>
         <button onClick={closeMobile} className='absolute top-2 right-3'>X</button>
       </nav>

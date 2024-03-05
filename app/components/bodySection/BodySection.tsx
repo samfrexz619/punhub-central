@@ -39,11 +39,16 @@ const BodySection = () => {
               ))
             }
           </ul>
-          <div className="flex mt-16 gap-x-4 justify-center lg:justify-start">
+          <div className="block md:hidden pt-10">
+            <button className="bg-main py-4 px-12 h-12 rounded-lg text-white text-[14px] font-bold">
+              OPEN APP
+            </button>
+          </div>
+          <div className="hidden md:flex mt-16 gap-x-4 justify-center lg:justify-start">
             <Button variant="app" />
             <Button variant="google" />
           </div>
-          <span className="absolute -left-7 -bottom-[12rem] -z-0">
+          <span className="absolute hidden md:block -left-7 -bottom-[12rem] -z-0">
             <Image
               src={'/assets/musical-note.svg'}
               alt="musical note image"

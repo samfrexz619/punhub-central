@@ -30,20 +30,13 @@ const BodySection = () => {
       <div className="lg:px-37 px-3 lg:flex justify-between gap-x-8">
         <div className="lg:w-[552px]">
           <h1 className={`${playfair_display.className} text-2xl md:text-[40px] font-medium text-black leading-[48px]`}>
-            Let’s revive the Creativity of <br className="hidden md:block" /> the hip-hop culture
+            Let’s revive the Creativity of the <br className="hidden md:block" /> hip-hop culture
           </h1>
           <div className="mt-5">
             <p className="text-black text-[16px]">
               Connect with the world of rhythm and lyrics, share your puns, show your <br className="hidden md:block" /> support for talented creators, and <br className="hidden md:block" /> contribute to the punchline community—connect with every <br className="hidden md:block" /> pun lover today!
             </p>
           </div>
-          {/* <ul className="mt-4">
-            {
-              pageItems.map(item => (
-                <PageItem key={item.id} color={item.color} text={item.text} />
-              ))
-            }
-          </ul> */}
           <div className="block lg:hidden pt-10">
             <button className="bg-main py-4 px-12 h-12 rounded-lg text-white text-[14px] font-bold">
               OPEN APP
@@ -62,14 +55,27 @@ const BodySection = () => {
             />
           </span>
         </div>
-        <div className="relative w-rem hidden lg:flex justify-end">
-          <Image
-            src={'/assets/vidoe.svg'}
-            alt="punhub splashscreen display"
-            height={490}
-            width={400}
-            className="block rounded-30 w-full"
-          />
+        <div className="w-full hidden lg:flex justify-end">
+          <div className="w-full fixed right-[8.7rem]">
+            <div className="flex w-full justify-end relative">
+              <Image
+                src={'/assets/video-mockup.svg'}
+                alt="punhub splashscreen display"
+                height={490}
+                width={476}
+                className="rounded-30 block"
+              />
+              <div>
+                <Image
+                  src={'/assets/phone-images/phone1.svg'}
+                  alt="punhub splashscreen display"
+                  height={100}
+                  width={100}
+                  className="rounded-30 block h-[475px] w-[450px] absolute -right-[5.7rem] bottom-2"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

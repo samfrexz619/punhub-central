@@ -1,7 +1,9 @@
+"use client"
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import { playfair_display } from "../../fonts";
 import Button from "./Button";
-import PageItem from "./PageItem";
+import { phoneImages } from "./bodyData";
 import './bodySection.scss'
 
 
@@ -24,6 +26,15 @@ const BodySection = () => {
       color: '#82ABFB'
     },
   ]
+
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  useEffect(() => {
+    const slideTimer = setInterval(() => {
+      setCurrentIndex(prevIndex => prevIndex === phoneImages.length - 1 ? 0 : prevIndex + 1)
+    }, 3000)
+    return () => clearInterval(slideTimer)
+  }, [phoneImages.length])
 
   return (
     <div className="w-full relative lg:py-3">
@@ -55,24 +66,22 @@ const BodySection = () => {
             />
           </span>
         </div>
-        <div className="w-full hidden lg:flex justify-end">
-          <div className="w-full fixed right-[8.7rem]">
-            <div className="flex w-full justify-end relative">
-              <Image
-                src={'/assets/video-mockup.svg'}
-                alt="punhub splashscreen display"
-                height={490}
-                width={476}
-                className="rounded-30 block"
-              />
-              <div>
-                <Image
-                  src={'/assets/phone-images/phone1.svg'}
-                  alt="punhub splashscreen display"
-                  height={100}
-                  width={100}
-                  className="rounded-30 block h-[475px] w-[450px] absolute -right-[5.7rem] bottom-2"
-                />
+        <div className="w-rem hidden lg:flex justify-end bg-re">
+          <div className="w-full">
+            <div className="video-bg right-0">
+              <div className="flex h-full w-full">
+                {
+                  phoneImages.map((image, idx) => (
+                    <Image
+                      key={image.id}
+                      src={image.image}
+                      alt={image.alt}
+                      height={100}
+                      width={100}
+                      className={`${currentIndex === idx ? 'block' : 'hidden'} rounded-30 block h-[475px] w-[460px] absolute -right-[6rem] bottom-2 top-2`}
+                    />
+                  ))
+                }
               </div>
             </div>
           </div>

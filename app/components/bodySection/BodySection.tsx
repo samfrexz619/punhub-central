@@ -78,6 +78,7 @@ const BodySection = () => {
                       alt={image.alt}
                       height={100}
                       width={100}
+                      priority
                       className={`${currentIndex === idx ? 'block' : 'hidden'} rounded-30 block h-[475px] w-[460px] absolute -right-[6rem] bottom-2 top-2`}
                     />
                   ))

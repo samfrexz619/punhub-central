@@ -2,7 +2,6 @@
   background-image: url('/assets/android-bg.png');
   background-repeat: no-repeat;
   height: 490px;
-  // background-color: red;
   width: 50%;
 }
 
@@ -10,7 +9,6 @@
   background-image: url('/assets/iphone-bg.png');
   background-repeat: no-repeat;
   height: 490px;
-  // background-color: red;
   width: 100%;
 }
 
@@ -22,4 +20,27 @@
   background-position: right top;
   position: relative;
   right: -5rem;
+}
+
+.carousel {
+  transition: transform 0.5s ease;
+}
+
+.carousel.active {
+  flex: 0 0 100%;
+  transform: translateX(0);
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-20%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.carousel.active {
+  animation: slide 0.5s ease;
 }
